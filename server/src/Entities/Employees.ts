@@ -1,9 +1,11 @@
-
-import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm"; //se declaran los tipos de datos ORM 
-
+//es importante poner en verdadero la funcion de decorators en el tsconfig.json
 
 
-@Entity() //se declara la entidad para la creacion de la tabla en la base de datos
+import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+
+
+
+@Entity()
 export class Employees extends BaseEntity {
 
     @PrimaryGeneratedColumn()

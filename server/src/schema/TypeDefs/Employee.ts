@@ -1,8 +1,8 @@
-import { GraphQLObjectType, GraphQLID, GraphQLString } from "graphql";  //importamos los tipos de datos de la libreria de GraphQL
+import { GraphQLObjectType, GraphQLID, GraphQLString } from "graphql";  //importamos los tipos de datos que vamos a utilizar
+
+//los TypeDefs son los datos que definiremos para las consuiltas de solo lectura del futuro.
 
 
-
-//Creacion de formato de la tabla "Employees" Para la base de datos
 export const EmployeeType = new GraphQLObjectType ({
     name: "Employee",
     fields: () => ({

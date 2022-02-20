@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client'
-import {Table, TableContainer, TableHead, TableCell, TableBody,TableRow } from '@material-ui/core'
 import  Sidebar  from './Components/Sidebar'
 import ListOFEmployees from './Components/ListOfEmployees';
 
@@ -12,17 +11,15 @@ function App() {
     cache: new InMemoryCache(),
   });
 
-
-
-
   return (
-
-    <>
-    <ApolloProvider client={client}> 
-      <Sidebar/>
-      <ListOFEmployees/>
-    </ApolloProvider>
-    </>
+    <div>
+      <div className="Components">
+        <Sidebar/>  
+        <ApolloProvider client={client}> 
+          <ListOFEmployees/>
+        </ApolloProvider>
+      </div>
+    </div>
   );
 
 

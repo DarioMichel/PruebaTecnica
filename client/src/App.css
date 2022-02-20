@@ -1,7 +1,14 @@
-.App {
-  width: 100w;
-  height: 100vh;
-  
+
+.Components {
+  padding: 5px;
+  margin-bottom: 0%;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 25% 75%;
+  width: 100vw;
+  height: 50vw;
+  position: relative;
+  text-align: center;
 }
 
 body {
@@ -44,11 +51,10 @@ body {
   background-color: #293846;
 }
 
-
 /* Opcion ACtiva */
-.SidebarList #active {
+/* .SidebarList #active {
   background-color: #293846;
-}
+} */
 
 .row #icon {
   flex: 30%;
@@ -60,3 +66,5 @@ body {
 .row #title {
   flex: 70%;
 }
+
+

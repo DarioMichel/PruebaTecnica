@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css';
+import '../App';
 import { SidebarData } from './SidebarData'
 
 
@@ -10,9 +10,10 @@ function Sidebar() {
             <ul className="SidebarList">
                 {SidebarData.map((val, key) => {
                     return (
-                        <li key={key} 
+                        <li 
+                        key={key} 
                         className="row"
-                         id={window.location.pathname == val.link ? "active" : ""} 
+                        id={window.location.pathname === val.link ? "active" : ""} 
                         onClick={() => {window.location.pathname = val.link}}
                         > 
                         

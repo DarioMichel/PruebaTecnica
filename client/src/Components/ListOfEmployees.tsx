@@ -8,7 +8,7 @@ function ListOFEmployees() {
     const {data} = useQuery(GET_ALL_EMPLOYEES);
     
 
-
+    //Creacion de tabla para para crud principal.
     return <div className="table">
         <TableContainer>
             <Table>
@@ -24,7 +24,7 @@ function ListOFEmployees() {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                {data && (data.getAllEmployees.map((employee : any) => {
+                {data && (data.getAllEmployees.map((employee : any) => { //Se crea la funcion data para pintar los datos en la app
                 return  <TableRow>
                             <TableCell>{employee.id}</TableCell>
                             <TableCell>{employee.name}</TableCell>

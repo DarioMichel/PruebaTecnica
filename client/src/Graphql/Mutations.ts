@@ -1,8 +1,9 @@
 import { gql } from '@apollo/client';
 
 
-//Para poder hacer uso de las Mutaciones que se haran desde el front end hacia el backend, tendremos que crear una carpeta propia para contenido de GraphQL donde crearemos la carpeta para las mutaciones y para las consultas
+//Exportacion de las mutaciones que se haran hacia el servidor desde el cliente en este caso para añadir y editar.
 
+//Mutacion para Crear 
 export const CREATE_EMPLOYEE =  gql`
 
     mutation createEmployee(
@@ -32,6 +33,8 @@ export const CREATE_EMPLOYEE =  gql`
        }
 `;
 
+
+//Mutacion para Editar
 
 export const UPDATE_EMPLOYEE =  gql`
 

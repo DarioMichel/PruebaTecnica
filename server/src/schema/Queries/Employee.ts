@@ -1,5 +1,5 @@
 import { GraphQLList } from 'graphql'
-import {EmployeeType} from '../TypeDefs/Employee'
+import {EmployeeType} from '../TypeDefs/employee'
 import {Employees} from '../../Entities/Employees'
 
 export const  GET_ALL_EMPLOYEES = {

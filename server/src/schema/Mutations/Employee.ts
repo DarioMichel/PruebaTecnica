@@ -1,5 +1,5 @@
 import { GraphQLString } from "graphql";
-import { EmployeeType } from "../TypeDefs/Employee";
+import { EmployeeType } from "../TypeDefs/employee";
 import {MessageType} from '../TypeDefs/Messages'
 import {Employees} from '../../Entities/Employees'
 

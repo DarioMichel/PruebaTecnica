@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client'
+import {Table, TableContainer, TableHead, TableCell, TableBody,TableRow } from '@material-ui/core'
+import ListOFEmployees from './Components/ListOfEmployees';
 
 function App() {
 
@@ -16,7 +18,7 @@ function App() {
 
     <>
     <ApolloProvider client={client}> 
-    
+      <ListOFEmployees/>
     </ApolloProvider>
     </>
   );

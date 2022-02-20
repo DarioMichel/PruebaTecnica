@@ -5,6 +5,17 @@ import { createConnection } from 'typeorm';
 
 const main = async () => {
 
+    //Connection to Database 
+    await createConnection({
+        type: "mysql",
+        database: "pruebatecnicadb",
+        username: "root",
+        password: "123456",
+        logging: true,
+        synchronize:false,
+        entities: [],
+    });
+
     const app = express();
     app.use(cors());
     app.use(express.json);

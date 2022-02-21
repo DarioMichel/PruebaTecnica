@@ -17,7 +17,7 @@ function App() {
         
         <ApolloProvider client={client}> 
         <Navbar/>
-          <div className="Components"></div>
+
             {/* <DataTable/> */}
             {/* <ListOFEmployees/>  */}
           </ApolloProvider>

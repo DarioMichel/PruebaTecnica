@@ -2,6 +2,8 @@ import React from "react";
 import {GET_ALL_EMPLOYEES} from "../Graphql/Queries"
 import {useQuery} from '@apollo/client'
 import {Table, TableContainer, TableHead, TableCell, TableBody,TableRow } from '@material-ui/core'
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 function ListOFEmployees() {
 
@@ -34,10 +36,12 @@ function ListOFEmployees() {
                             <TableCell>{employee.phone}</TableCell>
                             <TableCell>{employee.civilstatus}</TableCell>
                         </TableRow>
-                
                 }))}
                 </TableBody>
             </Table>
+            <Stack spacing={2}>
+                <Pagination count={10} shape="rounded" />
+            </Stack>
         </TableContainer>
     </div>;
 }

@@ -27,7 +27,8 @@ const main = () => __awaiter(void 0, void 0, void 0, function* () {
         username: "root",
         password: "123456",
         logging: true,
-        synchronize: false,
+        host:'',
+        synchronize: True,
         entities: [Employees_1.Employees]
     });
     //Creando la inicializacion del server y tambien indicando que haremos peticiones por medio de HTTPS  por eso declaramos que recibiremos informacion en formato Json

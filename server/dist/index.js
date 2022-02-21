@@ -27,7 +27,7 @@ const main = () => __awaiter(void 0, void 0, void 0, function* () {
         username: "root",
         password: "123456",
         logging: true,
-        host:'',
+        host:"localhost",
         synchronize: True,
         entities: [Employees_1.Employees]
     });

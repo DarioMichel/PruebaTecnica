@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client'
-import  Sidebar  from './Components/Sidebar'
 import ListOFEmployees from './Components/ListOfEmployees';
+import Navbar from './Components/Navbar';
+
 
 function App() {
 
@@ -12,18 +13,16 @@ function App() {
   });
 
   return (
-    <div>
-      <div className="Components">
-        <Sidebar/>  
+    
+        
         <ApolloProvider client={client}> 
-          <ListOFEmployees/>
-        </ApolloProvider>
-      </div>
-    </div>
-  );
+        <Navbar/>
+          <div className="Components"></div>
+            {/* <DataTable/> */}
+            {/* <ListOFEmployees/>  */}
+          </ApolloProvider>
+        
 
-
-
-}
+)}
 
 export default App;

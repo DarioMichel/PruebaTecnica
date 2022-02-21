@@ -45,6 +45,13 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.background {
+  background-color: aqua;
+}
+
+.background-drawer{
+  background-color: rgb(10, 161, 161);
+}
 /* Posicionamiento del cursor */
 .SidebarList .row:hover {
   cursor: pointer;
